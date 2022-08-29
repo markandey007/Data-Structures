@@ -13,6 +13,7 @@ class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
         vector<vector<int>> v;
+  
         queue<TreeNode*> q;
         q.push(root);
         
