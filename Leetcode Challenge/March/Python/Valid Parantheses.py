@@ -1,7 +1,7 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         bracket = {"(":")", "[":"]", "{":"}"}
-        open_par = set(["(", "[", "{"])
+        open_par = {"(", "[", "{"}
         stack=[]
         for i in s:
             if i in open_par:
