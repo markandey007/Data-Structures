@@ -1,4 +1,5 @@
-import random
+import secrets
+
 class Solution:
 
     def __init__(self, nums: List[int]):
@@ -15,7 +16,7 @@ class Solution:
         Returns a random shuffling of the array.
         """
         src = self.origin[:]
-        random.shuffle(src)
+        secrets.SystemRandom().shuffle(src)
         return src
             
         
